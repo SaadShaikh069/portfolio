@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad Shaikh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="assets/image/fav.gif">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <div class="logo ps-3 d-flex align-items-center">
+                saad-shaikh
+            </div>
+            <ul class="body-text">
+                <li>
+                    <a href="index.html">_home</a>
+                </li>
+                <li>
+                    <a href="about-me.html">_about-me</a>
+                </li>
+                <li>
+                    <a href="skills.html">_skills</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <span class="contact">
+                <a href="contact.html">_contact-me</a>
+            </span>
+        </div>
+    </header>
+    <header class="mobile-header">
+        <div class="logo">saad-shaikh</div>
+        <div class="collapsable">
+            <button id="trigger" class="btn"><i class="fa-solid fa-bars"></i></button>
+            <ul data-status="closed" id="mobile-menus" class="menu-container">
+                <li><a href="index.html">_hello</a></li>
+                <li><a href="about-me.html">_about-me</a></li>
+                <li><a href="skills.html">_skills</a></li>
+                <li><a href="contact.html">_contact-me</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="intro">
+            <p class="greet m-0"></p>
+            <h1 class="text-white m-0 name"></h1>
+            <p class="d-flex align-items-center position"><i class="fa-solid fa-greater-than me-2"></i></p>
+            <div class="codeSection text-wrap">
+            </div>
+        </div>
+        <div class="snakeGame">
+            <div id="bgcircle-1"></div>
+            <div id="bgcircle-2"></div>
+            <div class="player">
+                <button id="startGame">start-game</button>
+                <div class="game-status">
+                </div>
+
+            </div>
+            <div class="instructions">
+                <div>
+                    <p class="text-white m-0">// Use keyboard</p>
+                    <p class="text-white m-0">// arrow to play </p>
+                </div>
+                <div class="buttons-group">
+                    <button class="up"><i class="fa-solid fa-caret-up"></i></button>
+                    <button class="left"><i class="fa-solid fa-caret-left"></i></button>
+                    <button class="down"><i class="fa-solid fa-caret-down"></i></button>
+                    <button class="right"><i class="fa-solid fa-caret-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="left">
+            <ul>
+                <li>find me in:</li>
+                <li><a target="_blank" href="https://www.instagram.com/saadshaikh.dev/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a target="_blank" href="https://wa.me/919076304291"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="mail">
+                <a href="mailto:saadshaikh85kg@gmail.com">saadshaikh85kg@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/snake-game.js"></script>
+</body>
+
+</html>

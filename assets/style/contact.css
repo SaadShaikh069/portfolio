@@ -1,0 +1,217 @@
+main {
+  display: flex;
+}
+main > aside,
+main > div {
+  height: 84vh;
+}
+main > aside {
+  width: 20.09vw;
+  border-right: 1px solid #1e2d3d;
+}
+main > aside > .items-heading {
+  color: white;
+  border-bottom: 1px solid #1e2d3d;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.my-dropdown,
+.my-dropdown-q {
+  cursor: pointer;
+}
+.my-dropdown-q:hover,
+.file-component:hover {
+  background-color: #051f30;
+}
+.my-dropdown > .fa-solid,
+.my-dropdown-q > .fa-solid {
+  transition: all 0.4s;
+}
+ul.items {
+  display: none;
+  padding-left: 0.3rem;
+}
+main > .center {
+  width: 40vw;
+  border-right: 1px solid #1e2d3d;
+}
+main > .center > .topbar {
+  border-bottom: 1px solid #1e2d3d;
+  height: 8%;
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+}
+.asideTrigger {
+  display: none;
+}
+main > .center > .topbar::-webkit-scrollbar {
+  display: none;
+}
+main > .center > .topbar > .file-name {
+  height: 100%;
+  border-right: 1px solid #1e2d3d;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main > .center > .form {
+  height: 92%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .center > .form > form {
+  width: 70%;
+}
+main > .center > .form > form > div > label {
+  font-size: 0.9rem;
+}
+main > .center > .form > form > div > input,
+main > .center > .form > form > div > textarea {
+  background: #011221;
+  border: 1px solid #1e2d3d;
+  color: #607b96;
+  font-size: 0.9rem;
+}
+main > .center > .form > form > div > input:focus,
+main > .center > .form > form > div > textarea:focus {
+  border-color: #607b96;
+  outline: none;
+  box-shadow: 0 0 2.5px #607b96;
+}
+main > .center > .form > form > button {
+  background: #1c2b3a;
+  color: white;
+  font-size: 0.9rem;
+}
+main > .right {
+  width: 40vw;
+}
+
+main > .right > .topbar {
+  border-bottom: 1px solid #1e2d3d;
+  height: 8%;
+}
+main > .right > .container {
+  height: 90%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+main > .right > .container > .code {
+  display: flex;
+  font-size: 0.8rem;
+}
+main > .right > .container > .code > ul > li {
+  margin-top: 0.6rem;
+}
+/* ================== RESPONSIVE ================= */
+
+/* Extra large devices (desktops, 1367px and up) */
+@media (min-width: 1367px) {
+  /* Styles for extra large devices */
+}
+/* Large devices (15-inch desktop, 1024px to 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  /* Styles for large devices */
+}
+
+/* Medium devices (tablets, 768px to 1023.98px) */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  /* Styles for medium devices */
+}
+/* Small devices (tablets, 480px to 767.98px) */
+@media (min-width: 480px) and (max-width: 767.98px) {
+  aside {
+    display: none;
+    position: fixed;
+    top: 8vh;
+    left: 0;
+    background-color: #011221;
+    width: 50vw !important;
+    height: 84vh !important;
+    z-index: 100;
+  }
+  aside > .fa-xmark {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+  }
+  .asideTrigger {
+    display: block;
+    color: white;
+  }
+  main > .center {
+    width: 50vw;
+  }
+  main > .right {
+    width: 50vw;
+  }
+  main > .right > .container > .code {
+    font-size: 0.6rem;
+  }
+}
+
+/* Extra small devices (phones, less than 480px) */
+@media (max-width: 479.98px) {
+  aside {
+    display: none;
+    position: fixed;
+    top: 8vh;
+    left: 0;
+    background-color: #011221;
+    width: 50vw !important;
+    height: 84vh !important;
+    z-index: 100;
+  }
+  aside > .fa-xmark {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+  }
+  .asideTrigger {
+    display: block;
+    color: white;
+  }
+  main {
+    display: block;
+    overflow: auto;
+    height: 84vh;
+  }
+  main > .center {
+    width: 100vw;
+  }
+  main > .right {
+    width: 100vw;
+  }
+  main > .right > .container > .code {
+    font-size: 0.6rem;
+  }
+  main > .center > .form > form > div {
+    margin-bottom: 0.7rem !important;
+  }
+  main > .center > .form > form > div > label {
+    font-size: 0.7rem !important;
+  }
+  main > .center > .form > form > div > input.form-control {
+    height: 1.7rem !important;
+  }
+  main > .center > .form > form > div > textarea {
+    height: 3rem !important;
+  }
+  main > .center > .form > form > button {
+    width: 100%;
+    margin-top: 0.7rem;
+  }
+}
